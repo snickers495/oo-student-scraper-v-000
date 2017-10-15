@@ -30,7 +30,7 @@ class Scraper
         profile[:linkedin] = link.attr("href")
       elsif link.attr("href").include?("github")
         profile[:github] = link.attr("href")
-      elsif link.attr("href").include?("blog")
+      else 
         profile[:blog] = link.attr("href")
       end
     end
