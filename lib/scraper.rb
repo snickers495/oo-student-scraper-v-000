@@ -35,7 +35,7 @@ class Scraper
       end
     end
     profile[:profile_quote] = new_html.css('div.vitals-container div.vitals-text-container div.profile-quote').text
-    profile[:bio] = new_html.css('div.details-container div.bio-block details-block div.bio-content div.description-holder p').text
+    profile[:bio] = new_html.css('div.details-container div.bio-block.details-block div.bio-content.content-holder div.description-holder p').text
     profile
 
   end
