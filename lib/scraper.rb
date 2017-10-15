@@ -24,13 +24,13 @@ class Scraper
     profile = {}
     links = new_html.css('div.vitals-container div.social-icon-container a')
     links.each do |link|
-      if link.attr("href").text.include?("twitter")
+      if link.attr("href").include?("twitter")
         profile[:twitter] = link.attr("href").text
-      elsif link.attr("href").text.include?("linkedin")
+      elsif link.attr("href").include?("linkedin")
         profile[:linkedin] = link.attr("href").text
-      elsif link.attr("href").text.include?("github")
+      elsif link.attr("href").include?("github")
         profile[:github] = link.attr("href").text
-      elsif link.attr("href").text.include?("blog")
+      elsif link.attr("href").include?("blog")
         profile[:blog] = link.attr("href").text
       end
     end
