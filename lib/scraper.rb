@@ -28,4 +28,5 @@ class Scraper
 # twitter url, linkedin url, github url, blog url, profile quote, and bio
 # bio: (div.details-container div.bio-block details-block div.bio-content div.description-holder p )
 # profile: div.vitals-text-container div.profile-quote
+
 end
